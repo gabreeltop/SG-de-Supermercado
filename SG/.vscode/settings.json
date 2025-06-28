@@ -1,7 +1,7 @@
 {
-    "java.project.sourcePaths": ["src"],
-    "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
-        "lib/**/*.jar"
+        "lib/java-cup-11b.jar",
+        "lib/java-cup-runtime.jar",
+        "lib/mysql-connector-j-9.3.0.jar"
     ]
 }
