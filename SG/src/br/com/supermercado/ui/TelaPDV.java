@@ -79,7 +79,7 @@ public class TelaPDV extends JFrame {
                 if(produto.getQuantidadeEstoque() > 0) {
                     ItemVenda item = new ItemVenda();
                     item.setProduto(produto);
-                    item.setQuantidade(1); // Simplificado para adicionar 1 por vez
+                    item.setQuantidade(1);
                     item.setPrecoUnitario(produto.getPreco());
 
                     vendaAtual.adicionarItem(item);
@@ -124,7 +124,7 @@ public class TelaPDV extends JFrame {
         try {
             vendaService.registrarVenda(vendaAtual);
             JOptionPane.showMessageDialog(this, "Venda registrada com sucesso!");
-            iniciarNovaVenda(); // Prepara para a próxima venda
+            iniciarNovaVenda();
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(this, "Erro ao registrar a venda: " + e.getMessage());
             e.printStackTrace();

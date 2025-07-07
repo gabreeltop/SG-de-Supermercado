@@ -8,9 +8,8 @@ public class Venda {
     private int id;
     private LocalDateTime dataVenda;
     private double valorTotal;
-    private List<ItemVenda> itens = new ArrayList<>(); // Lista de itens desta venda
-
-    // Getters e Setters
+    private List<ItemVenda> itens = new ArrayList<>();
+    
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
     public LocalDateTime getDataVenda() { return dataVenda; }
@@ -20,7 +19,6 @@ public class Venda {
     public List<ItemVenda> getItens() { return itens; }
     public void setItens(List<ItemVenda> itens) { this.itens = itens; }
 
-    // Método útil para adicionar itens e calcular o total
     public void adicionarItem(ItemVenda item) {
         this.itens.add(item);
         this.valorTotal += item.getPrecoUnitario() * item.getQuantidade();

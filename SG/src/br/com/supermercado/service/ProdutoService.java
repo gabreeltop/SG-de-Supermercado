@@ -23,10 +23,7 @@ public class ProdutoService {
         return produtoDAO.listarTodos();
     }
 
-    // MÉTODO ADICIONADO:
     /**
-     * Busca um produto pelo seu ID.
-     * Este método é essencial para a tela de Ponto de Venda.
      * @param id O ID do produto a ser buscado.
      * @return O objeto Produto se encontrado, ou null caso contrário.
      */

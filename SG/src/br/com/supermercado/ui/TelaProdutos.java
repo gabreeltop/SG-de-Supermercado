@@ -35,7 +35,7 @@ public class TelaProdutos extends JFrame {
         formPanel.add(txtId);
         formPanel.add(new JLabel("Nome do Produto:"));
         formPanel.add(txtNome);
-        formPanel.add(new JLabel("Preço (ex: 25.50):"));
+        formPanel.add(new JLabel("Preço:"));
         formPanel.add(txtPreco);
         formPanel.add(new JLabel("Quantidade em Estoque:"));
         formPanel.add(txtEstoque);

@@ -4,9 +4,8 @@ public class ItemVenda {
     private int id;
     private Produto produto;
     private int quantidade;
-    private double precoUnitario; // Preço no momento da venda
+    private double precoUnitario;
 
-    // Getters e Setters
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
     public Produto getProduto() { return produto; }
